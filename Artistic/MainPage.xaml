@@ -22,33 +22,35 @@
             </StackLayout>
 
             <StackLayout>
+                
+                
                 <Label
                 Text="Username:"
                 FontSize="14"
                 TextColor="#FFFFFF"
                 HorizontalOptions="Center" />
+
                 <Entry
                     FontSize="14"
                     TextColor="#FFFFFF"
-                    HorizontalOptions="Center" /> 
+                    HorizontalOptions="Center" 
+                    />
+
                 <Label
                 Text="Password:"
                 TextColor="#FFFFFF"
                 FontSize="14"
-
                 HorizontalOptions="Center" />
+
                 <Entry
                     FontSize="14"
                     TextColor="#FFFFFF"
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="Center"
+                    />
+
+                <Button Text="Login" BackgroundColor="#EC5800" Padding="2"></Button>
 
             </StackLayout>
-
-            <Label
-                Text="Dont have an account?"
-                TextColor="#FFFFFF"
-                FontSize="14"
-                HorizontalOptions="Center" />
 
         </VerticalStackLayout>
 
