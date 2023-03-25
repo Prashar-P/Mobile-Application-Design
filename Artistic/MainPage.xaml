@@ -48,7 +48,7 @@
                     HorizontalOptions="Center"
                     />
 
-                <Button Text="Login" BackgroundColor="#EC5800" Padding="2"></Button>
+                <Button Clicked="LoginButton" Text="Login" BackgroundColor="#EC5800" Padding="2"></Button>
 
             </StackLayout>
 
