@@ -22,18 +22,25 @@ public partial class BrowseItemsViewModel : ObservableObject
         {
             new Item(
 
-                Name: "Photograph of Watch",
-                ProductImage: ImageSource.FromFile("C:\\Users\\Priya\\OneDrive\\Documents\\6002CEM\\Artistic\\Resources\\SampleItems\\pexels_cottonbro_studio.jpg"),
-                Description: "Photograph of a black watch",
-                Artist: "Joey Nguyen",
+                Name: "Abstract Wallpaper",
+                ProductImage: ImageSource.FromResource("Artistic.Resources.SampleItems.pexels_ann_h.jpg", typeof(BrowseItemsViewModel).GetTypeInfo().Assembly),
+                Description: "Abstract Wallpaper Uploaded by Ann",
+                Artist: "Ann H",
                 UploadTime: DateTime.UtcNow.AddDays(1)
             ),
             new Item(
-                Name: "Photograph of Phone",
-                ProductImage: ImageSource.FromResource("Artistic.Resources.SampleItems.pexels_cottonbro_studio.jpg", typeof(BrowseItemsViewModel).GetTypeInfo().Assembly),
-                Description: "Photograph of a Phone",
-                Artist: "Gantas Valciulenas",
+                Name: "Cherry Print Garment",
+                ProductImage: ImageSource.FromResource("Artistic.Resources.SampleItems.pexels_eberhard_grossgasteiger.jpg", typeof(BrowseItemsViewModel).GetTypeInfo().Assembly),
+                Description: "Teal and Pink Cherry Print Garment",
+                Artist: "Eberhard Grossgasteiger",
                 UploadTime: DateTime.UtcNow.AddDays(3).AddHours(2)
+            ),
+            new Item(
+                Name: "Photo Of Painting",
+                ProductImage: ImageSource.FromResource("Artistic.Resources.SampleItems.pexels_torsten_dettlaff.jpg", typeof(BrowseItemsViewModel).GetTypeInfo().Assembly),
+                Description: "Close-Up Photo Of Painting",
+                Artist: "Torsten Dettlaff",
+                UploadTime: DateTime.UtcNow.AddDays(1).AddHours(6)
             )
         };
 
