@@ -9,6 +9,7 @@ public partial class BrowseItems : ContentPage
     public BrowseItems()
     {
         InitializeComponent();
+        BindingContext = new BrowseItemsViewModel();
 
     }
 

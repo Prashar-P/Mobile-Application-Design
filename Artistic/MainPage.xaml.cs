@@ -10,9 +10,8 @@ public partial class MainPage : ContentPage
 
     async void LoginButton(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new BrowseItems())
+        await Navigation.PushAsync(new BrowseItems());
     }
 
-    public 
 }
 
