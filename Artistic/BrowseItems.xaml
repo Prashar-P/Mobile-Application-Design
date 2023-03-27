@@ -16,8 +16,8 @@
         
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Item">
-                <Border x:Name="roundBorder" MinimumHeightRequest="315" Stroke="#2b2b2b">
-                    <Grid Padding="5" BackgroundColor="#171716" >
+                <Border x:Name="roundBorder" Style="{StaticResource ItemBorder}">
+                    <Grid  Style="{StaticResource Items}" >
                         <Grid.RowDefinitions>
                             <RowDefinition Height="AUTO"/>
                             <RowDefinition Height="AUTO"/>
