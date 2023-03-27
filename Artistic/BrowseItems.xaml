@@ -5,9 +5,8 @@
              xmlns:model="clr-namespace:Artistic.Model"
              x:DataType="viewmodels:BrowseItemsViewModel"
              x:Class="Artistic.BrowseItems"
-             BackgroundImageSource="pexels_steve_johnson.jpg"
              Title="BrowseItems">
-    
+
     <CollectionView ItemsSource = "{Binding Items}"
         Grid.Row="2" Margin="20,35,20,20">
         <CollectionView.ItemsLayout>
@@ -17,8 +16,8 @@
         
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Item">
-                <Border x:Name="roundBorder" MinimumHeightRequest="315" Stroke="#2b2b2b">
-                    <Grid Padding="5" BackgroundColor="#171716" >
+                <Border x:Name="roundBorder" Style="{StaticResource ItemBorder}">
+                    <Grid  Style="{StaticResource Items}" >
                         <Grid.RowDefinitions>
                             <RowDefinition Height="AUTO"/>
                             <RowDefinition Height="AUTO"/>
@@ -31,10 +30,9 @@
                                 <RowDefinition Height="AUTO"/>
                                 <RowDefinition Height="AUTO"/>
                             </Grid.RowDefinitions>
-                            
-                            <Label Text="{Binding Name}" FontFamily="Roboto-Medium" TextColor="White"
-                                   FontSize="24" HorizontalTextAlignment="Center" Padding="30"/>
-                            <Label Text="{Binding Artist}" FontFamily="Roboto-Light" TextColor="#eb8d3b" HorizontalTextAlignment="Center" />
+
+                            <Label Style="{StaticResource Title}" Text="{Binding Name}"/>
+                            <Label Style="{StaticResource Artist}" Text="{Binding Artist}"/>
                             <Image Source="{Binding ProductImage}" Aspect="AspectFill" Grid.Row="1"/>
                         </Grid>
 
@@ -43,9 +41,9 @@
                                 <RowDefinition Height="AUTO"/>
                                 <RowDefinition Height="AUTO"/>
                             </Grid.RowDefinitions>
-                            
-                            <Label Text="{Binding Description}" FontFamily="Roboto-Light" TextColor="White"/>
-                            <Label Text="{Binding UploadTime}" Grid.Row="2" FontFamily="Roboto-Light" TextColor="#474747" Padding="10" HorizontalTextAlignment="End"/>
+
+                            <Label Style="{StaticResource Base}" Text="{Binding Description}"/>
+                            <Label Style="{StaticResource DateTime}" Text="{Binding UploadTime}" Grid.Row="2"/>
                         </Grid>
                         
                     </Grid>

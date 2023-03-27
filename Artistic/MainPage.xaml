@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Artistic.MainPage"
-             BackgroundImageSource="pexels_steve_johnson.jpg">
+             x:Class="Artistic.MainPage">
 
-    <ContentPage.Content>
+        <ContentPage.Content>
 
         <VerticalStackLayout
             Spacing="25"
@@ -12,43 +11,23 @@
             VerticalOptions="Center">
 
             <StackLayout>
-                <Label
-                Text="Artistic"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="100"
-                FontFamily="Ascrada"
-                TextColor="#FFFFFF"
-                HorizontalOptions="Center" />
+                <Label Style="{StaticResource Artistic}" Text="Artistic" />
             </StackLayout>
 
             <StackLayout>
-                
-                
-                <Label
-                Text="Username:"
-                FontSize="14"
-                TextColor="#FFFFFF"
-                HorizontalOptions="Center" />
 
-                <Entry
-                    FontSize="14"
-                    TextColor="#FFFFFF"
-                    HorizontalOptions="Center" 
-                    />
 
-                <Label
-                Text="Password:"
-                TextColor="#FFFFFF"
-                FontSize="14"
-                HorizontalOptions="Center" />
+                <Label Style="{StaticResource Login}"
+                Text="Username:"/>
 
-                <Entry
-                    FontSize="14"
-                    TextColor="#FFFFFF"
-                    HorizontalOptions="Center"
-                    />
+                <Entry Style="{StaticResource EntryLogin}" />
 
-                <Button Clicked="LoginButton" Text="Login" BackgroundColor="#EC5800" Padding="2"></Button>
+                <Label Style="{StaticResource Login}"
+                Text="Password:"/>
+
+                <Entry Style="{StaticResource EntryLogin}"/>
+
+                <Button Clicked="LoginButton" Text="Login"></Button>
 
             </StackLayout>
 
