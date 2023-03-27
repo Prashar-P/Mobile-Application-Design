@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Artistic.ViewModel"
+             x:Class="Artistic.Settings"
+             Title="Settings">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <Button 
+                        x:Name="DarkButtom"
+                        Text="Dark Theme"
+                        Clicked="DarkTheme_Clicked"
+                        />
+
+                <Button 
+                        x:Name="LightButtom"
+                        Text="Light Theme"
+                        Clicked="LightTheme_Clicked"
+                        />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
