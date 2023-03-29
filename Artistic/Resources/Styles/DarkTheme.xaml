@@ -99,7 +99,7 @@
 
     <Style TargetType="Grid"  x:Key="Items">
         <Setter Property="BackgroundColor" Value="#171716"/>
-        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Padding" Value="10"/>
     </Style>
 
     <Style TargetType="Border"  x:Key="ItemBorder">

@@ -7,7 +7,7 @@
              Title="Settings">
 
     <ScrollView>
-        <VerticalStackLayout>
+        <!--<VerticalStackLayout>
             <HorizontalStackLayout>
                 <Button 
                         x:Name="DarkButtom"
@@ -21,7 +21,7 @@
                         Clicked="LightTheme_Clicked"
                         />
             </HorizontalStackLayout>
-        </VerticalStackLayout>
+        </VerticalStackLayout>-->
     </ScrollView>
     
 </ContentPage>

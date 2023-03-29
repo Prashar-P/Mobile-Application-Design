@@ -4,12 +4,19 @@ using System.ComponentModel;
 
 namespace Artistic.ViewModel;
 
+using CommunityToolkit.Mvvm.Input;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Reflection;
+using System.Windows.Input;
 
 public partial class BrowseItemsViewModel : ObservableObject
 {
     [ObservableProperty]
     List<Item> items;
+
+    [ObservableProperty]
+    Item item;
 
     public BrowseItemsViewModel()
     {
@@ -43,8 +50,20 @@ public partial class BrowseItemsViewModel : ObservableObject
                 UploadTime: DateTime.UtcNow.AddDays(1).AddHours(6)
             )
         };
-
     }
 
+    [RelayCommand]
+    async Task Tap(object Item)
+    {
+        await Shell.Current.GoToAsync(nameof(ViewItem), new Dictionary<string, object>
+        {
+            { "item", Item }
+        });
+    }
 }
+
+
+
+
+
 
