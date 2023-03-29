@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace Artistic.ViewModel
 {
-    internal class SettingsViewModel
+    internal class SettingsViewModel : MainPageViewModel
     {
-    }
-
-    public void DarkTheme_Clicked(object sender, EventArgs e)
-    {   
-        //To Be Implemented
 
     }
 
-    public void LightTheme_Clicked(object sender, EventArgs e)
-    {
-        //To Be Implemented
+    //public void DarkTheme_Clicked(object sender, EventArgs e)
+    //{   
+    //    //To Be Implemented
+
+    //}
+
+    //public void LightTheme_Clicked(object sender, EventArgs e)
+    //{
+    //    //To Be Implemented
 
 
-    }
+    //}
 
 }
