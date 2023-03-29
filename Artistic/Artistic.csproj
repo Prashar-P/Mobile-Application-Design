@@ -49,7 +49,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\pexels_cottonbro_studio.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\pexels_cottonbro_studio.jpg" />
+	  <None Remove="Resources\SampleItems\pexels_ann_h.jpg" />
+	  <None Remove="Resources\SampleItems\pexels_eberhard_grossgasteiger.jpg" />
+	  <None Remove="Resources\SampleItems\pexels_torsten_dettlaff.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\SampleItems\pexels_ann_h.jpg">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\SampleItems\pexels_eberhard_grossgasteiger.jpg" />
+	  <EmbeddedResource Include="Resources\SampleItems\pexels_torsten_dettlaff.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0-preview1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="BrowseItems.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

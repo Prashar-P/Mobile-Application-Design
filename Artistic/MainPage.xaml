@@ -3,39 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Artistic.MainPage">
 
-    <ScrollView>
+        <ContentPage.Content>
+
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <StackLayout>
+                <Label Style="{StaticResource Artistic}" Text="Artistic" />
+            </StackLayout>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <StackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                <Label Style="{StaticResource Login}"
+                Text="Username:"/>
+
+                <Entry Style="{StaticResource EntryLogin}" />
+
+                <Label Style="{StaticResource Login}"
+                Text="Password:"/>
+
+                <Entry Style="{StaticResource EntryLogin}"/>
+
+                <Button Clicked="LoginButton" Text="Login"></Button>
+
+            </StackLayout>
 
         </VerticalStackLayout>
-    </ScrollView>
+
+    </ContentPage.Content>
 
 </ContentPage>
