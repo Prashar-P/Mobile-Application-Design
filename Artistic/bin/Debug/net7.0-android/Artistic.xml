@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Artistic</name>
+    </assembly>
+    <members>
+        <member name="P:Artistic.ViewModel.BrowseItemsViewModel.Items">
+            <inheritdoc cref="F:Artistic.ViewModel.BrowseItemsViewModel.items"/>
+        </member>
+        <member name="P:Artistic.ViewModel.BrowseItemsViewModel.Item">
+            <inheritdoc cref="F:Artistic.ViewModel.BrowseItemsViewModel.item"/>
+        </member>
+        <member name="F:Artistic.ViewModel.BrowseItemsViewModel.tapCommand">
+            <summary>The backing field for <see cref="P:Artistic.ViewModel.BrowseItemsViewModel.TapCommand"/>.</summary>
+        </member>
+        <member name="P:Artistic.ViewModel.BrowseItemsViewModel.TapCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Artistic.ViewModel.BrowseItemsViewModel.Tap(System.Object)"/>.</summary>
+        </member>
+    </members>
+</doc>

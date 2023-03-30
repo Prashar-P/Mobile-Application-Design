@@ -28,6 +28,8 @@
                 <Entry Style="{StaticResource EntryLogin}"/>
 
                 <Button Clicked="LoginButton" Text="Login"></Button>
+                <Button Clicked="RegisterButton" Text="Register"></Button>
+
 
             </StackLayout>
 

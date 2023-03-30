@@ -65,7 +65,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0-preview1, )"
+              "version": "[8.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -95,6 +95,10 @@
               "target": "Package",
               "version": "[7.0.52, )",
               "autoReferenced": true
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -150,6 +154,10 @@
               "target": "Package",
               "version": "[1.7.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -187,7 +195,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0-preview1, )"
+              "version": "[8.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -217,6 +225,14 @@
               "target": "Package",
               "version": "[7.0.52, )",
               "autoReferenced": true
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -254,7 +270,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0-preview1, )"
+              "version": "[8.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -284,6 +300,14 @@
               "target": "Package",
               "version": "[7.0.52, )",
               "autoReferenced": true
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -322,7 +346,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.0-preview1, )"
+              "version": "[8.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -368,6 +392,14 @@
               "target": "Package",
               "version": "[1.2.221109.1, )",
               "autoReferenced": true
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

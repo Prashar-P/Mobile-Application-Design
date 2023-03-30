@@ -11,6 +11,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"//{nameof(BrowseItems)}");
     }
+    async void RegisterButton(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(RegisterUser));
+    }
 
    
 }
