@@ -76,7 +76,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="BrowseItems.xaml">
+	  <MauiXaml Update="Views\BrowseItems.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
