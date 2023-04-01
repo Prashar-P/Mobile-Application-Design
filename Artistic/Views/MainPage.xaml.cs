@@ -1,16 +1,15 @@
-﻿namespace Artistic;
+﻿using Artistic.ViewModel;
+
+namespace Artistic;
 
 public partial class MainPage : ContentPage
 {
     public MainPage()
     {
         InitializeComponent();
+        BindingContext = new MainPageViewModel();
     }
 
-    async void LoginButton(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync($"//{nameof(BrowseItems)}");
-    }
     async void RegisterButton(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(RegisterUser));

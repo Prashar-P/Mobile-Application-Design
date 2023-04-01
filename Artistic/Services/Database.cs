@@ -1,4 +1,5 @@
 ﻿using Artistic.Model;
+using CloudKit;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -41,11 +42,10 @@ namespace Artistic.Services
                 Phone = phone
             };
 
-            Console.WriteLine("ADDEDUSER",user);
 
 
             var id = await db.InsertAsync(user);
-            Console.WriteLine(db);
+            Console.WriteLine("User Created");
 
         }
 
@@ -57,12 +57,20 @@ namespace Artistic.Services
 
         }
 
-        public async Task<IEnumerable<Users>> GetUsers()
+        public async Task<IEnumerable<Users>> GetAllUsers()
         {
             await Init();
 
             var users = await db.Table<Users>().ToListAsync();
             return users;
+
+        }
+        
+        public async Task<bool> GetUser(string username, string password)
+        {
+            await Init();
+            var query = db.QueryAsync<Users>("SELECT EXISTS(SELECT 1 FROM [Users] WHERE [Username] =  ({username}) AND [Password] = ({password})) ");
+            return true;
 
         }
     }
