@@ -65,7 +65,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0-preview2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -99,6 +99,10 @@
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[2.1.4, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -195,7 +199,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0-preview2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -229,6 +233,10 @@
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[2.1.4, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -270,7 +278,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0-preview2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -304,6 +312,10 @@
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[2.1.4, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -346,7 +358,7 @@
           "dependencies": {
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0, )"
+              "version": "[8.2.0-preview2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -396,6 +408,10 @@
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[2.1.4, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

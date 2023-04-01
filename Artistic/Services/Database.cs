@@ -28,17 +28,9 @@ namespace Artistic.Services
 
         public async Task AddUser(string username, string password, string fname, string lname, string email, string phone)
         {
-            Console.WriteLine("ADDEDUSER");
-            Console.WriteLine(username);
-            Console.WriteLine(password);
-            Console.WriteLine(fname);
-            Console.WriteLine(lname);
-            Console.WriteLine(email);
-            Console.WriteLine(phone);
-
 
             await Init();
-            var users = new Users
+            var user = new Users
             {
 
                 Username = username,
@@ -49,7 +41,11 @@ namespace Artistic.Services
                 Phone = phone
             };
 
-            var id = await db.InsertAsync(users);
+            Console.WriteLine("ADDEDUSER",user);
+
+
+            var id = await db.InsertAsync(user);
+            Console.WriteLine(db);
 
         }
 

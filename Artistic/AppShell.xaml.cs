@@ -1,5 +1,4 @@
-﻿using Android.Media;
-using Artistic.ViewModel;
+﻿using Artistic.ViewModel;
 
 namespace Artistic;
 
