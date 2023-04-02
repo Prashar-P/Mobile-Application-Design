@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Artistic"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Artistic\\BrowseItems.xaml",
   "PreviewInSolutionExplorer": false
 }

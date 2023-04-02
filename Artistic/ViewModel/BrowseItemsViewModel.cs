@@ -10,7 +10,7 @@ using System.Diagnostics.Metrics;
 using System.Reflection;
 using System.Windows.Input;
 
-public partial class BrowseItemsViewModel : ObservableObject
+public partial class BrowseItemsViewModel : MainViewModel
 {
     [ObservableProperty]
     List<Item> items;
