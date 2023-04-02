@@ -22,11 +22,11 @@ namespace Artistic.ViewModel
 
                 Users = new ObservableRangeCollection<Users>();
                 //RefreshCommand = new AsyncCommand(Refresh);
-                CheckUserExist = new AsyncCommand<Users>(loginUser);
+                CheckUserExist = new AsyncCommand<Users>(LoginUser);
 
             }
 
-            async Task loginUser(Users users)
+            async Task LoginUser(Users users)
             {
                 if (await new UsersService().GetUser(Username,Password) == true)
                 {
@@ -34,7 +34,6 @@ namespace Artistic.ViewModel
                 }
                 else
                 {
-                    await Shell.Current.GoToAsync(nameof(MainPage));
                 }
             }
 
