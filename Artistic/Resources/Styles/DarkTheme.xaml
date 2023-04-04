@@ -107,4 +107,10 @@
         <Setter Property="Stroke" Value="#2b2b2b"/>
     </Style>
 
+    <Style TargetType="SearchBar"  x:Key="SBar">
+        <Setter Property="PlaceholderColor" Value="white"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontFamily" Value="Roboto-Light"/>
+    </Style>
+
 </ResourceDictionary>
