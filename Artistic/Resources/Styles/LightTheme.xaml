@@ -105,9 +105,8 @@
         <Setter Property="Padding" Value="10"/>
     </Style>
 
-    <Style TargetType="Border"  x:Key="ItemBorder">
-        <Setter Property="MinimumHeightRequest" Value="315"/>
-        <Setter Property="Stroke" Value="#eb8d3b"/>
+    <Style TargetType="SearchBar"  x:Key="SBar">
+        <Setter Property="FontFamily" Value="Roboto-Light"/>
     </Style>
 
 </ResourceDictionary>
