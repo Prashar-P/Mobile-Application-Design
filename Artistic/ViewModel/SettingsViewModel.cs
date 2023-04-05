@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Artistic.ViewModel
 {
-    internal class SettingsViewModel : MainPageViewModel
+    internal class SettingsViewModel : BaseViewModel
     {
 
     }

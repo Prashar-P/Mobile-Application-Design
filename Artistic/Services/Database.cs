@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Artistic.Services
 {
+
+    //Working with databases: https://www.youtube.com/watch?v=XFP8Np-uRWc&t=1041s&ab_channel=JamesMontemagno
+    // Database creating and access is developed alongside this tutorial to allow user creation and auth.
     public class UsersService
     {
 
