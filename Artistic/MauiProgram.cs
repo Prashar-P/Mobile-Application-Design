@@ -17,7 +17,7 @@ public static class MauiProgram
         builder.Services.AddTransient<MainPage>();
         builder.Services.AddTransient<ViewItem>();
         builder.Services.AddTransient<BrowseItems>();
-        builder.Services.AddTransient<Settings>();
+        builder.Services.AddSingleton<Settings>();
 
 
         return builder.Build();

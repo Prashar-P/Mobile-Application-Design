@@ -11,7 +11,7 @@ using Artistic.Services;
 
 namespace Artistic.ViewModel
 {
-    public class MainPageViewModel : MainViewModel
+    public class MainPageViewModel : BaseViewModel
     {
             public ObservableRangeCollection<Users> Users { get; set; }
             public AsyncCommand<Users> CheckUserExist { get; }

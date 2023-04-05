@@ -17,7 +17,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace Artistic.ViewModel
 {
-    public class RegisterUserViewModel : MainViewModel
+    public class RegisterUserViewModel : BaseViewModel
     {
         public ObservableRangeCollection<Users> Users { get; set; }
         public AsyncCommand AddCommand { get; }

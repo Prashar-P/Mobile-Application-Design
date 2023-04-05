@@ -6,15 +6,21 @@
 7.  Built With
 8.  Getting Started
 9.  Prerequisites
-10. Installation
-11. Contributing
-12. Contact
+10. Contributing
+11. Contact
+12. Resources used for development
+
 
 ## About The Project
 
 ## Artistic - Gallery Viewing App
 
-A application for Artists to share and view work.
+The application, ‘Artistic’ is aimed at creative individuals working independently in arts, 
+aiming to allow allow users to create a portfolio for online exposure. As most artists, 
+currently post artwork on crowded social media sites this application focuses on creating a 
+dedicated space for art allowing users to login and browse artwork, further development in this 
+project can allow for a more social media approach allowing users to comment and sell and buy artwork
+on the application. More information in regards to the current features and packages used can be found below:
 
 ### Functionality Covered
 
@@ -33,17 +39,11 @@ Additional Elements
 * .Net Maui
 * sqlite
 
-Packages:
+APIs/Packages:
 sqlite-net-pcl
 SQLitePCLRaw.bundleGreen 
 community-toolkit-mvvm
 
-### Installation
-
-1. Clone the repo
-```sh
-$ git clone https://github.coventry.ac.uk/6002CEM-2223/6002CEM-2223-9246731_Artistic_PP
-```
 
 ## Contributing
 1. Fork the Project
@@ -52,9 +52,14 @@ $ git clone https://github.coventry.ac.uk/6002CEM-2223/6002CEM-2223-9246731_Arti
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Resources used for development
+- MVVM Basics: https://www.youtube.com/watch?v=Hh279ES_FNQ&list=PLdo4fOcmZ0oUBAdL2NwBpDs32zwGqb9DY&ab_channel=dotnet
+- Understanding UI Implementation: https://www.youtube.com/watch?v=wMn1tuMfZ-0&ab_channel=AmichaiMantinband
+- Database Integration: https://www.youtube.com/watch?v=XFP8Np-uRWc&t=1041s&ab_channel=JamesMontemagno
+- Microsoft .Net Maui Learn Documentation + Tutorials: https://learn.microsoft.com/en-us/dotnet/maui/?view=net-maui-7.0
+ 
+
 
 ## Contact
 
 Priya Prashar - Student ID : 9246731
-
-Project Link: [https://github.coventry.ac.uk/6002CEM-2223/6002CEM-2223-9246731_Artistic_PP](https://github.coventry.ac.uk/6002CEM-2223/6002CEM-2223-9246731_Artistic_PP)

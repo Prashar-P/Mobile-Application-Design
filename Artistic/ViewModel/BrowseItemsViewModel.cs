@@ -10,13 +10,17 @@ using System.Diagnostics.Metrics;
 using System.Reflection;
 using System.Windows.Input;
 
-public partial class BrowseItemsViewModel : MainViewModel
+public partial class BrowseItemsViewModel : BaseViewModel
 {
     [ObservableProperty]
     List<Item> items;
 
     [ObservableProperty]
     Item item;
+
+    //Mock data for products
+    // The following section is developed alongside: https://www.youtube.com/watch?v=wMn1tuMfZ-0&ab_channel=AmichaiMantinband
+    // This was done allow the product viewing in the browseproducts page view
 
     public BrowseItemsViewModel()
     {
