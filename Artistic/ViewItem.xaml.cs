@@ -10,9 +10,9 @@ public partial class ViewItem : ContentPage
         BindingContext = new ViewItemViewModel();
     }
 
-    protected override void OnNavigatedTo(NavigatedToEventArgs args)
-    {
-        base.OnNavigatedTo(args);
-        Console.WriteLine(args);
-    }
+    //protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    //{
+    //    base.OnNavigatedTo(args);
+    //    Console.WriteLine(args);
+    //}
 }

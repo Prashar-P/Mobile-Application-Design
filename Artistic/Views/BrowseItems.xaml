@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Artistic.ViewModel"
+             xmlns:model="clr-namespace:Artistic.Model"
+             x:DataType="viewmodels:BrowseItemsViewModel"
+             x:Class="Artistic.BrowseItems"
+             Title="Explore">
+    <Grid>
+        <SearchBar Style="{StaticResource SBar}" Placeholder ="Search..." SearchCommand="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:BrowseItemsViewModel}}, Path=SearchCommand}"
+                SearchCommandParameter="{Binding Items}"/>
+        <CollectionView ItemsSource = "{Binding Items}"  Grid.Row="2" Margin="20,35,20,20">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="20"/>
+        </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Item">
+                    <Border x:Name="roundBorder" Style="{StaticResource ItemBorder}">
+                        <Grid  Style="{StaticResource Items}" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                            </Grid.RowDefinitions>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:BrowseItemsViewModel}}, Path=TapCommand}" 
+                                                  CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
+                            <Grid Padding="10">
+
+                                <Grid.RowDefinitions Width="2*">
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Style="{StaticResource Title}" Text="{Binding Name}"/>
+                                <Label Style="{StaticResource Artist}" Text="{Binding Artist}"/>
+                                <Image Source="{Binding ProductImage}" Aspect="AspectFill" Grid.Row="1"/>
+                            </Grid>
+
+                            <Grid Grid.Row="1" Padding="10">
+                                <Grid.RowDefinitions Width="2*">
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Style="{StaticResource Base}" Text="{Binding Description}"/>
+                                <Label Style="{StaticResource DateTime}" Text="{Binding UploadTime}" Grid.Row="2"/>
+
+                            </Grid>
+
+
+
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

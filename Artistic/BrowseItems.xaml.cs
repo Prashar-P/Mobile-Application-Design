@@ -11,8 +11,4 @@ public partial class BrowseItems : ContentPage
         BindingContext = new BrowseItemsViewModel();
 
     }
-
-
- 
-
 }

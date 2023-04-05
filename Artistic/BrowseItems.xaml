@@ -12,22 +12,22 @@
             <LinearItemsLayout Orientation="Vertical"
                                ItemSpacing="20"/>
         </CollectionView.ItemsLayout>
-        
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Item">
                 <Border x:Name="roundBorder" Style="{StaticResource ItemBorder}">
-                    <Grid  Style="{StaticResource Items}" >
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="AUTO"/>
-                            <RowDefinition Height="AUTO"/>
-                        </Grid.RowDefinitions>
-                        <Grid.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:BrowseItemsViewModel}}, Path=TapCommand}" 
+                    <Grid>
+                        <Grid  Style="{StaticResource Items}" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                            </Grid.RowDefinitions>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:BrowseItemsViewModel}}, Path=TapCommand}" 
                                                   CommandParameter="{Binding .}"/>
-                        </Grid.GestureRecognizers>
-                        <Grid Padding="10">
+                            </Grid.GestureRecognizers>
+                            <Grid Padding="10">
 
-                            <Grid.RowDefinitions Width="2*">
+                                <Grid.RowDefinitions Width="2*">
                                     <RowDefinition Height="AUTO"/>
                                     <RowDefinition Height="AUTO"/>
                                     <RowDefinition Height="AUTO"/>
@@ -46,17 +46,12 @@
 
                                 <Label Style="{StaticResource Base}" Text="{Binding Description}"/>
                                 <Label Style="{StaticResource DateTime}" Text="{Binding UploadTime}" Grid.Row="2"/>
-                            
+
+                            </Grid>
                         </Grid>
-                        
-                        
-                            
-                        
                     </Grid>
                 </Border>
             </DataTemplate>
         </CollectionView.ItemTemplate>
-        
-        
     </CollectionView>
 </ContentPage>

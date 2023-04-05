@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Artistic.RegisterUser"
+             xmlns:model="clr-namespace:Artistic.Model"
+             x:DataType="model:Users"
+             xmlns:viewmodels="clr-namespace:Artistic.ViewModel"
+             Title="Register">
+
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <Label Style="{StaticResource Login}" Text="Username:"/>
+
+            <Entry  Style="{StaticResource Login}" Text="{Binding Username}" />
+
+            <Label Style="{StaticResource Login}" Text="Password:"/>
+
+            <Entry Style="{StaticResource Login}" Text="{Binding Password}"/>
+
+            <Label Style="{StaticResource Login}" Text="First Name:"/>
+
+            <Entry  Style="{StaticResource Login}" Text="{Binding FName}"/>
+
+            <Label  Style="{StaticResource Login}" Text="Last Name:"/>
+
+            <Entry Style="{StaticResource Login}" Text="{Binding LName}"/>
+
+            <Label Style="{StaticResource Login}" Text="Email:"/>
+
+            <Entry Style="{StaticResource Login}" Text="{Binding Email}"/>
+
+            <Label Style="{StaticResource Login}" Text="Phone:"/>
+
+            <Entry Style="{StaticResource Login}" Text="{Binding Phone}"/>
+
+            <Button Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RegisterUserViewModel}}, Path=AddCommand}"  Text="Register"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
