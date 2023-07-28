@@ -12,10 +12,12 @@
 
 ## About The Project
 
-## Artistic - Gallery Viewing App Summary - 100 Words
+## Artistic - Gallery Viewing App Summary
 
-The application, ‘Artistic’ is aimed at creative individuals working independently in arts, 
-aiming to allow allow users to create a portfolio for online exposure. As most artists, 
+![image](https://github.com/Prashar-P/MobileApplicationDesign/assets/140114811/cf4d491d-643b-464e-9e15-c524467b7b0e)
+
+Created as part of Coventry University Project Assignment, This application, ‘Artistic’ is aimed at creative individuals 
+working independently in arts, aiming to allow allow users to create a portfolio for online exposure. As most artists, 
 currently post artwork on crowded social media sites this application focuses on creating a 
 dedicated space for art allowing users to login and browse artwork, further development in this 
 project can allow for a more social media approach allowing users to comment and sell and buy artwork
@@ -43,7 +45,6 @@ sqlite-net-pcl
 SQLitePCLRaw.bundleGreen 
 community-toolkit-mvvm
 
-
 ## Contributing
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -58,5 +59,4 @@ community-toolkit-mvvm
 - Microsoft .Net Maui Learn Documentation + Tutorials: https://learn.microsoft.com/en-us/dotnet/maui/?view=net-maui-7.0
  
 ## Contact
-
-Priya Prashar - Student ID : 9246731
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn - Priya Prashar](https://www.linkedin.com/in/priya-prashar-4801/)
